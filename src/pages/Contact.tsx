@@ -2,7 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { Mail, Phone, MapPin, Check, AlertCircle } from 'lucide-react';
 
 // API URL for the contact form
-const API_URL = 'http://localhost:3001/api/contact';
+const API_URL = '/.netlify/functions/sendEmail';
+
+// const API_URL = 'http://localhost:3001/api/contact';
+
 
 export default function Contact() {
   const [formData, setFormData] = useState({
