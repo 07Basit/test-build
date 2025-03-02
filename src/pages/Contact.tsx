@@ -30,8 +30,8 @@ export default function Contact() {
   useEffect(() => {
     const checkServer = async () => {
       try {
-        const response = await fetch('http://localhost:3001/api/test', { 
-          method: 'GET',
+        const response = await fetch('API_URL', { 
+          method: 'POST',
           headers: { 'Content-Type': 'application/json' }
         });
         
