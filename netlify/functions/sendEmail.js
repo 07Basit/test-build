@@ -57,7 +57,7 @@ export async function handler(event) {
 <p style="font-size: 12px; text-align: center; color: gray;">This message was sent via the contact form on our website. Please do not reply directly to this email.</p>
 </div> `,
         };
- 
+ // Email Format
         // Send email
         await transporter.sendMail(mailOptions);
  
